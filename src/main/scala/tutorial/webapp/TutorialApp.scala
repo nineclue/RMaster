@@ -1,5 +1,6 @@
 package tutorial.webapp
 
+import org.querki.jquery._
 import org.scalajs.dom
 import dom.document
 import scala.scalajs.js.annotation.JSExportTopLevel
@@ -7,7 +8,9 @@ import scala.scalajs.js.annotation.JSExportTopLevel
 object TutorialApp {
   val msg = "안녕하세요, 여러분!"
   val msgBtn = "버튼을 누르셨군요!"
+
   def main(args: Array[String]): Unit = {
+    // $("body").append(s"<p>$msg</p>")
     appendPar(document.body, msg)
   }
 
